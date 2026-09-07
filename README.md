@@ -200,4 +200,4 @@ We are very grateful for these excellent works: [Relation-DETR](https://github.c
 
 ## Contact
 
-Feel free to contact us if you have any questions: [chenlei9958@stu.ouc.edu.cn](mailto:chenlei9958@stu.ouc.edu.cn), [huangl@ouc.edu.cn](mailto:huangl@ouc.edu.cn).
+Feel free to contact me if there is any question. ([Lei Chen: chenlei9958@stu.ouc.edu.cn](mailto:chenlei9958@stu.ouc.edu.cn), [Lei Huang: huangl@ouc.edu.cn](mailto:huangl@ouc.edu.cn))

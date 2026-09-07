@@ -1,8 +1,6 @@
-# SA-DETR
+# SA-DETR: A Detection Transformer with Structure-Aware Enhancement for Ocean Eddy Small Object Detection
 
-**SA-DETR: A Detection Transformer with Structure-Aware Enhancement for Ocean Eddy Small Object Detection**
-
-This repository contains the official implementation of **SA-DETR**, a structure-aware end-to-end detector for mesoscale ocean eddies in sea level anomaly (SLA) fields.
+This is the implementation of paper: SA-DETR: A Detection Transformer with Structure-Aware Enhancement for Ocean Eddy Small Object Detection.
 
 **Note:** The source code is currently incomplete and will be fully released once the manuscript is accepted by the journal.
 
@@ -41,11 +39,7 @@ SA-DETR/
 └── requirements.txt
 ```
 
-Datasets, checkpoints, logs, prediction files, and visualization results are not distributed in this repository.
-
 ## Environment
-
-The reference environment follows Salience-DETR and Relation-DETR:
 
 ```bash
 git clone https://github.com/Jakelei/object-detection.git SA-DETR

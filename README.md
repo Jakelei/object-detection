@@ -34,7 +34,7 @@ SA-DETR/
 │   │   └── sa_detr.py
 │   ├── matcher/
 │   └── necks/
-│       └── channel_mapper.py
+│       └── channel_mapper_hsae.py
 ├── optimizer/
 ├── transforms/
 ├── util/

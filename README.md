@@ -27,10 +27,14 @@ SA-DETR/
 ├── models/
 │   ├── backbones/
 │   ├── bricks/
+│   │   ├── hsae.py
+│   │   ├── trro.py
+│   │   └── sa_transformer.py
 │   ├── detectors/
 │   │   └── sa_detr.py
 │   ├── matcher/
 │   └── necks/
+│       └── channel_mapper.py
 ├── optimizer/
 ├── transforms/
 ├── util/
@@ -99,31 +103,6 @@ CUDA_VISIBLE_DEVICES=0,1 accelerate launch main.py \
 
 Training parameters such as epochs, batch size, learning rate, output directory, and model configuration are defined in `configs/train_config.py`.
 
-## Resume training or fine-tune
-
-Set `SA_DETR_RESUME` before running the same training command.
-
-- A previous **training directory** restores the model, optimizer, scheduler, and epoch state from its latest checkpoint.
-- A **`.pth` checkpoint** loads model weights for fine-tuning but does not restore the complete optimizer and scheduler state.
-
-Resume a complete run:
-
-```bash
-export SA_DETR_DATA_ROOT=/path/to/dataset
-export SA_DETR_RESUME=/path/to/previous/training_directory
-CUDA_VISIBLE_DEVICES=0 accelerate launch main.py \
-  --config-file configs/train_config.py
-```
-
-Fine-tune from model weights:
-
-```bash
-export SA_DETR_DATA_ROOT=/path/to/dataset
-export SA_DETR_RESUME=/path/to/checkpoint.pth
-CUDA_VISIBLE_DEVICES=0 accelerate launch main.py \
-  --config-file configs/train_config.py
-```
-
 ## Evaluation and test
 
 Evaluate a checkpoint on the validation set:
@@ -165,7 +144,7 @@ accelerate launch test.py \
 
 ## License & Acknowledgment
 
-We are very grateful for these excellent works: [Relation-DETR](https://github.com/xiuqhou/Relation-DETR). Please follow their license for usage and redistribution. Thanks for the awesome works.
+We are very grateful for these excellent works: [Relation-DETR](https://github.com/xiuqhou/Relation-DETR), [DINO](https://github.com/IDEA-Research/DINO), and [HS-FPN](https://github.com/ShiZican/HS-FPN). Please follow their respective licenses for usage and redistribution. Thanks for their awesome works.
 
 ## Contact
 

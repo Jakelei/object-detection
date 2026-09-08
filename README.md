@@ -1,6 +1,6 @@
-# SA-DETR: A Detection Transformer with Structure-Aware Enhancement for Ocean Eddy Object Detection
+# A Detection Transformer with Structure-Aware Enhancement for Ocean Eddy Object Detection
 
-This is the implementation of paper: SA-DETR: A Detection Transformer with Structure-Aware Enhancement for Ocean Eddy Object Detection.
+This is the implementation of paper: A Detection Transformer with Structure-Aware Enhancement for Ocean Eddy Object Detection.
 
 **Note:** The source code is currently incomplete and will be fully released once the manuscript is accepted by the journal.
 
